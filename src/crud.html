@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="crud.css" />
+    
+  </head>
+  <body>
+    <header>
+        <button id="btnBack" class="btn btn-default" onclick="goBack()">< Back</button>
+        <h1>Diet Freak!</h1>
+        <div></div>
+    </header>
+
+    <div class="mainWrapper">
+
+      <h1>Meal Planner</h1>
+      <h2>Track Your Meal Here!</h2>
+
+      <form>
+        <div class="form-group">
+          <label>Day</label>
+          <input id="fileName" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>What You Eat Today?</label>
+          <textarea id="fileContents" class="form-control" rows="5"></textarea>
+        </div>
+      </form>
+
+      <button id="btnCreate" class="btn btn-default">Create</button>
+      <button id="btnRead" class="btn btn-default">Read</button>
+      <button id="btnDelete" class="btn btn-default">Delete</button>
+      <button id="btnUpdate" class="btn btn-default">Update</button>
+      
+
+    </div>
+    
+    <script src="main.js"></script>
+
+  </body>
+</html>

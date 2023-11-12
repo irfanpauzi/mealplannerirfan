@@ -1,0 +1,213 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(131,58,180,1) 100%);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+  margin: 0 auto;
+  font-display: flex;
+  font-size: 3.5rem;
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #7700f6;
+  color: #000000;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #6b00f6;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+html {
+  font-size: 12px;
+}
+
+section {
+  min-height: 89.8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 57%);
+}
+
+.container {
+  width: 100%;
+  height: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.brand {
+  text-align: center;
+  font-size: 4rem;
+  color: whitesmoke;
+  margin-top: 0px;
+}
+
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: 0px auto;
+  background-color: rgb(223, 223, 223);
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 2rem;
+  background-color: rgb(223, 223, 223);
+  display: inline-block;
+}
+
+form ion-icon {
+  width: 8%;
+  font-size: 3rem;
+  margin-bottom: -8px;
+  color: rgb(75, 75, 75);
+  display: inline-block;
+}
+
+.search-result {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(37, 37, 37);
+  padding: 15px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-result .title {
+  color: whitesmoke;
+  margin: 20px 10px 0 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.view-btn {
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  padding: 10px 0;
+  background-color: #404041;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+/* Styles for crud button */
+button {
+  background-color:aliceblue;
+  
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  position: absolute; 
+  align-items: center;
+  top: 20px; 
+  right: 20px; 
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #f6ef00;
+}
+
+.item-data {
+  color: whitesmoke;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+
+.container.initial .brand {
+  font-size: 7rem;
+}
+
+.container.initial form {
+  max-width: 800px;
+}
+
+.container.initial form input {
+  padding: 20px;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .search-result {
+    grid-gap: 10px;
+  }
+
+  .container.initial .brand {
+    font-size: 4rem;
+  }
+
+  .container.initial form {
+    max-width: 500px;
+  }
+
+  .container.initial form input {
+    padding: 10px;
+    font-size: 2rem;
+  }
+}

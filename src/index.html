@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Meal Plan</title>
+</head>
+<body>
+  <!--header where meal planner button located-->
+  <header>
+    <button onclick="redirectToCrud()">MEAL PLANNER</button>
+    <h1>Diet Freak!</h1>
+  </header>
+  <section>
+    <div class="container initial">
+      <h1 class="brand">Your Buddy for Recipe</h1>
+      <form>
+        <!--search box-->
+        <input type="text" placeholder="Search Your Recipe...">
+        <ion-icon name="search"></ion-icon>
+      </form>
+      <!--the output of search-->
+      <div class="search-result">
+      </div>
+    </div>
+  </section>
+  <script src="mealplan.js"></script>
+</body>
+</html>
